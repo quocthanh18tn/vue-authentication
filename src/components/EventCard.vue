@@ -12,11 +12,11 @@ export default {
     event: {
       type: Object,
       default: () => {
-        return {}
-      }
-    }
-  }
-}
+        return {};
+      },
+    },
+  },
+};
 </script>
 
 <style scoped>

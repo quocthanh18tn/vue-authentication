@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import axios from 'axios'
-import EventCard from '../components/EventCard'
+import axios from 'axios';
+import EventCard from '../components/EventCard';
 
 export default {
   components: { EventCard },
-  data () {
+  data() {
     return {
       isLoading: true,
-      events: []
-    }
+      events: [],
+    };
   },
-  created () {
+  created() {
     axios.get('//localhost:3000/dashboard').then(({ data }) => {
-      this.events = data.events.events
-      this.isLoading = false
-    })
-  }
-}
+      this.events = data.events.events;
+      this.isLoading = false;
+    });
+  },
+};
 </script>

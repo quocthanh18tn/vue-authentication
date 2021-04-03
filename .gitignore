@@ -1,11 +1,13 @@
 .DS_Store
-node_modules
+**/node_modules
 /dist
 
 # local env files
 .env.local
 .env.*.local
-db/user.json
+.env.staging
+.env.production
+.env
 
 # Log files
 npm-debug.log*
@@ -19,4 +21,33 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
+*.sw?
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+.env.staging
+.env.production
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Test output
+/tests/e2e/screenshots
+/tests/e2e/videos
